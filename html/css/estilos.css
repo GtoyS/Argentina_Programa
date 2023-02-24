@@ -1,18 +1,21 @@
-/* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* otros estilos predeterminados que deseas eliminar */
-}
-@media (max-width: 600px) 
+*
 {
-  .facet_sidebar {
-    display: none;
-  }
-}
+  
+
+
 h1 {
   font-family: 'Mukta', sans-serif;
 }
-img {
-  position: center;
+
+#foto4x4 {
+  position: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 }
