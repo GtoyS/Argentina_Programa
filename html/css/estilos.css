@@ -1,43 +1,39 @@
-* {
-  body {
-    background-color: lightgreen;
-  }
-
-}
-
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
 }
 
-
-#partesuperior{
+#partesuperior {
   background-color: rgb(127, 160, 71);
+  overflow: hidden; 
+  height: auto;
+  width: 100%;
 }
 
-#curriculum {
+.tituloepigrafe {
+font-size: 30px;
 text-align: center;
 font-family: 'Mukta', sans-serif;
+padding: 25px 35px 25px 35px;
+}
+
+.imgytxt {
+display: flex;
+float: left;
+align-items: center;
+justify-content: center;
+padding: 20px;
+height: 100%;
+width: 100%;
 }
 
 img {
-  float: left;
-margin: 15px 0px 15px 0px;
+width: 50%;
+height: 50%;
 }
 
-.epigrafe {
- margin: 50px 10px 10px 100px;
-  padding: 25px 100px 28px 50px;
-}
+.escriturapres {
+padding: 25px 35px 25px 15px;
 
-#info_primaria {
-  margin-top: 100px;
 }
-
-.escrito, .estudios {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
