@@ -1,0 +1,65 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(109, 58, 192);
+  }
+  img {
+    align-content: baseline;
+  }
+}
+/*a esta opcion no la veo levantada en la web, deberia saber porque*/
+@media print {
+  @page {
+    size: A4;
+    margin: 2cm;
+
+  }
+}
+/*
+#cuerpoentero {
+size: a4;
+}*/
+
+#partesuperior {
+  background-color: rgb(127, 160, 71);
+  overflow: hidden; 
+  height: auto;
+  width: 100%;
+}
+
+.tituloepigrafe {
+font-size: 30px;
+text-align: center;
+font-family: 'Mukta', sans-serif;
+padding: 25px 35px 25px 35px;
+}
+
+.imgytxt {
+display: flex;
+float: left;
+align-items: center;
+justify-content: center;
+padding: 20px 30px 25px 20px;
+height: 100%;
+width: 100%;
+max-width: 100%;
+min-block-size: 50%;
+
+}
+
+img {
+width: 10%;
+height: 10%;
+size: 45px;
+margin: 0;
+padding: 0;
+}
+
+.escriturapres {
+padding: 25px 35px 25px 15px;
+
+}
+/* hasta aca es el header*/
+
+.subtitulos, .estudios, .mistrabajos, .experiencia {
+padding: 10px 30px 25px 20px;
+}
