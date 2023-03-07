@@ -1,65 +1,98 @@
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: rgb(109, 58, 192);
+/ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
-  img {
-    align-content: baseline;
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
   }
-}
-/*a esta opcion no la veo levantada en la web, deberia saber porque*/
-@media print {
-  @page {
-    size: A4;
-    margin: 2cm;
-
+  
+  h1 {
+    font-size: 36px;
+    margin: 0;
   }
-}
-/*
-#cuerpoentero {
-size: a4;
-}*/
-
-#partesuperior {
-  background-color: rgb(127, 160, 71);
-  overflow: hidden; 
-  height: auto;
-  width: 100%;
-}
-
-.tituloepigrafe {
-font-size: 30px;
-text-align: center;
-font-family: 'Mukta', sans-serif;
-padding: 25px 35px 25px 35px;
-}
-
-.imgytxt {
-display: flex;
-float: left;
-align-items: center;
-justify-content: center;
-padding: 20px 30px 25px 20px;
-height: 100%;
-width: 100%;
-max-width: 100%;
-min-block-size: 50%;
-
-}
-
-img {
-width: 10%;
-height: 10%;
-size: 45px;
-margin: 0;
-padding: 0;
-}
-
-.escriturapres {
-padding: 25px 35px 25px 15px;
-
-}
-/* hasta aca es el header*/
-
-.subtitulos, .estudios, .mistrabajos, .experiencia {
-padding: 10px 30px 25px 20px;
-}
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  section {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 24px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+    
+    button[type="submit"] {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
